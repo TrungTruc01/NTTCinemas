@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Kích thước chữ khi được chọn -->
+    <item android:state_selected="true">
+        <objectAnimator
+            android:propertyName="textSize"
+            android:duration="150"
+            android:valueFrom="13sp"
+            android:valueTo="14sp"
+        android:valueType="floatType" />
+    </item>
+
+    <!-- Kích thước chữ khi không được chọn -->
+    <item>
+        <objectAnimator
+            android:propertyName="textSize"
+            android:duration="150"
+            android:valueFrom="18sp"
+            android:valueTo="16sp"
+            android:valueType="floatType" />
+    </item>
+</selector>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Ngày Giờ Thêm -->
+    <TextView
+        android:id="@+id/bannerDateAdded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:paddingBottom="4dp"
+        android:text="Ngày thêm: 01/06/2024 10:30"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray" />
+
+    <!-- Nội dung chính của item -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Hình ảnh của Banner -->
+        <ImageView
+            android:id="@+id/bannerImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_avatar" />
+
+        <!-- Tên Banner -->
+        <TextView
+            android:id="@+id/bannerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="8dp"
+            android:text="Tên Banner"
+            android:textSize="16sp" />
+
+        <!-- Layout dọc chứa nút Sửa và Xóa -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Nút Sửa (Icon) -->
+            <ImageButton
+                android:id="@+id/btnEdit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Sửa"
+                android:src="@drawable/ic_edit"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <!-- Nút Xóa (Icon) -->
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Xóa"
+                android:src="@drawable/ic_delete"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

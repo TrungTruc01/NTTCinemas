@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Danh sách Người dùng -->
+    <TextView
+        android:id="@+id/tvUsersHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Người dùng"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <ListView
+        android:id="@+id/lvUsers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Danh sách Quản lý -->
+    <TextView
+        android:id="@+id/tvAdminsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản lý"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <ListView
+        android:id="@+id/lvAdmins"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_color">#252b45</color>
+    <color name="black2">#28292b</color>
+    <color name="orange">#d14706</color>
+    <color name="grey">#989797</color>
+    <color name="red">#E70101</color>
+    <color name="inactive_dot_color">#FFFFFFFF</color>
+    <color name="gradient_start">#FFA500</color> <!-- Cam -->
+    <color name="gradient_end">#FF4500</color> <!-- Đỏ nhạt -->
+    <color name="tab_active">#FF4500</color> <!-- Màu cam pha đỏ -->
+    <color name="tab_inactive">#A9A9A9</color> <!-- Màu xám nhạt cho tab chưa được chọn -->
+    <color name="default_background">#EFEFEF</color> <!-- Màu xám nhạt -->
+    <color name="gray">#D3D3D3</color>
+    <color name="yellow">#FDD835</color>
+    <color name="blue">#007AFF</color>
+    <color name="color_checked">#E70808</color>
+    <color name="color_unchecked">#CCCCCC</color>
+    <color name="dark_red">#801F1F</color>
+    <color name="pink">#E60B31</color>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="excel_green">#217346</color>
+    <color name="word_blue">#2B579A</color>
+</resources>

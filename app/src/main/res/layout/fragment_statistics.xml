@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Spinner để chọn loại thời gian (tuần, tháng, năm) -->
+    <Spinner
+        android:id="@+id/spinnerTimeSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp" />
+
+    <!-- Spinner để chọn chi tiết tuần/tháng/năm -->
+    <Spinner
+        android:id="@+id/spinnerFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp" />
+
+    <!-- Biểu đồ tròn -->
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <!-- Danh sách thông tin vé -->
+    <ListView
+        android:id="@+id/paymentListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Nút xuất file Excel -->
+        <Button
+            android:id="@+id/btnExportExcel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/excel_green"
+            android:text="Xuất file Excel"
+            android:textColor="@android:color/white" />
+
+        <!-- Nút xuất file Word -->
+        <Button
+            android:id="@+id/btnExportWord"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/word_blue"
+            android:text="Xuất file Word"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>

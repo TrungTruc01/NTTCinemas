@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/navigation/admin_nav_graph.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/admin_nav_graph"
+    app:startDestination="@id/nav_banner">
+
+    <fragment
+        android:id="@+id/nav_banner"
+        android:name="com.example.nttcinemas.Admin.BannerFragment"
+        android:label="Quản lý Banner" />
+
+    <fragment
+        android:id="@+id/nav_film"
+        android:name="com.example.nttcinemas.Admin.FilmFragment"
+        android:label="Quản lý Phim" />
+
+    <fragment
+        android:id="@+id/nav_statistics"
+        android:name="com.example.nttcinemas.Admin.StatisticsFragment"
+        android:label="Thống kê" />
+
+    <fragment
+        android:id="@+id/nav_users"
+        android:name="com.example.nttcinemas.Admin.UsersFragment"
+        android:label="Quản lý Người dùng" />
+</navigation>

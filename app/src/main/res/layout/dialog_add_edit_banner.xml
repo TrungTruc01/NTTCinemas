@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Hình ảnh Banner -->
+    <ImageView
+        android:id="@+id/bannerImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/gray"
+        android:scaleType="centerCrop" />
+
+    <!-- Nút Chọn Ảnh -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnChooseImage"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dk"
+        android:text="Chọn Ảnh" />
+
+    <!-- Tên Banner -->
+    <EditText
+        android:id="@+id/edtBannerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Tên Banner"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+</LinearLayout>

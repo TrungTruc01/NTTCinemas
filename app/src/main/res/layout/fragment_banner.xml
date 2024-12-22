@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Nút Thêm Banner -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:layout_marginEnd="307dp"
+        android:layout_marginBottom="667dp"
+        android:background="@drawable/bg_dk"
+        android:text="Thêm" />
+
+    <!-- RecyclerView để hiển thị danh sách banner -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewBanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</RelativeLayout>

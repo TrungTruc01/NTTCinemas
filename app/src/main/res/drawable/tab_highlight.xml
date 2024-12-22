@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Trạng thái đang được chọn -->
+    <item android:state_selected="true">
+        <shape>
+            <solid android:color="#80FFFFFF" /> <!-- Nền trắng trong suốt 50% -->
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+
+    <!-- Trạng thái không được chọn -->
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent" /> <!-- Nền trong suốt hoàn toàn -->
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <size android:width="24dp" android:height="4dp" /> <!-- Kích thước gạch -->
+    <solid android:color="@color/gradient_end" /> <!-- Màu khi được chọn -->
+    <corners android:radius="2dp" /> <!-- Bo góc nhẹ -->
+</shape>
+

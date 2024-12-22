@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Các mục chính -->
+    <item
+        android:id="@+id/nav_banner"
+        android:title="Banner" />
+
+    <item
+        android:id="@+id/nav_film"
+        android:title="Phim" />
+
+    <item
+        android:id="@+id/nav_statistics"
+        android:title="Thống kê" />
+
+    <item
+        android:id="@+id/nav_users"
+        android:title="Người dùng" />
+
+    <!-- Mục Đăng xuất với màu đỏ -->
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Đăng xuất"
+        android:menuCategory="secondary"
+        android:layout_gravity="center_horizontal"
+        android:titleTextColor="#FF0000" />
+</menu>

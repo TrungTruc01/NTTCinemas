@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <!-- Poster Image -->
+        <ImageView
+            android:id="@+id/imgPoster"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="Poster"
+            android:scaleType="centerCrop" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnChooseImage"
+            android:background="@drawable/bg_dk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Chọn ảnh" />
+
+        <!-- Film Title -->
+        <EditText
+            android:id="@+id/edtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tiêu đề phim"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Description -->
+        <EditText
+            android:id="@+id/edtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Mô tả"
+            android:inputType="textMultiLine"
+            android:minLines="3" />
+
+        <!-- Time -->
+        <EditText
+            android:id="@+id/edtTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Thời gian chiếu (vd: 2 giờ 15 phút)"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Release Date -->
+        <EditText
+            android:id="@+id/edtReleaseDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ngày phát hành"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Price -->
+        <EditText
+            android:id="@+id/edtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giá vé (VD: 120.000)"
+            android:inputType="numberDecimal"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Genre -->
+        <EditText
+            android:id="@+id/edtGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Thể loại (cách nhau bằng dấu phẩy)"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Age Rating -->
+        <EditText
+            android:id="@+id/edtAgeRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Độ tuổi đánh giá (vd: +13, 18+)"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Director -->
+        <EditText
+            android:id="@+id/edtDirector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Đạo diễn"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Cast -->
+        <EditText
+            android:id="@+id/edtCast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Diễn viên (cách nhau bằng dấu phẩy)"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Language -->
+        <EditText
+            android:id="@+id/edtLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ngôn ngữ và phụ đề"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Save Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSaveFilm"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_dk"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Lưu phim" />
+    </LinearLayout>
+</ScrollView>

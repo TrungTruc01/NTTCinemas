@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Activity.FilmDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Hình ảnh Poster -->
+            <ImageView
+                android:id="@+id/filmPoster"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Nút Quay Lại -->
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="48dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back_dark" />
+
+            <!-- Chi tiết phim -->
+            <eightbitlab.com.blurview.BlurView
+                android:id="@+id/blurView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:background="@drawable/blur_bg"
+                app:blurOverlayColor="#90000000"
+                app:layout_constraintBottom_toBottomOf="@+id/filmPoster"
+                app:layout_constraintTop_toBottomOf="@+id/filmPoster">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="32dp">
+
+                    <!-- Tên Phim -->
+                    <TextView
+                        android:id="@+id/filmTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tên phim"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+
+                    <!-- Thể Loại -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/genreList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="63dp"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp" />
+
+                    <!-- Mô Tả -->
+                    <TextView
+                        android:id="@+id/filmDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mô tả phim"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <!-- Đánh Giá Độ Tuổi -->
+                    <TextView
+                        android:id="@+id/ageRating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Độ tuổi: +13"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- Tên Đạo Diễn -->
+                    <TextView
+                        android:id="@+id/directorName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Đạo diễn: Christopher Nolan"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- Danh Sách Diễn Viên -->
+                    <TextView
+                        android:id="@+id/castLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="93dp"
+                        android:text="Diễn viên:"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </eightbitlab.com.blurview.BlurView>
+
+            <!-- Nút Đặt Vé -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buyTicketButton"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_expense"
+                android:text="Đặt vé"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
